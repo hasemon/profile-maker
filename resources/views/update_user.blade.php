@@ -4,9 +4,14 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-center mb-4">Update Registration Form</h2>
+                <p class="text-center">
+                    <a class="fw-semibold text-primary mb-2" href="{{ url('/') }}">
+                        Go back Home
+                    </a>
+                </p>
                 <form method="POST" action="{{ route('user.update', $user->id) }}">
                     @csrf
-                    @method('PUT')
+                    @method('POST')
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name"  value="{{ $user->name }}"  >

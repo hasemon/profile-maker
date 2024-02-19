@@ -4,6 +4,9 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <h2 class="text-center mb-4">Registration Form</h2>
+                <a class="navbar-brand fs-6 fw-semibold text-primary" href="{{ url('/') }}">
+                    User list
+                </a>
                 <form method="POST" action="{{ route('user.store') }}">
                     @csrf
                     <div class="form-group">

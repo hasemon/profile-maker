@@ -2,14 +2,20 @@
 @section('content')
     <div class="container mt-5">
         <h2 class="text-center mb-4">User Information</h2>
+        <p class="text-center">
+            <a class="fw-semibold text-primary mb-2" href="{{ url('/create-user') }}">
+                Create User
+            </a>
+        </p>
+
         <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
                 <tr>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Phone</th>
                     <th>Mobile</th>
+                    <th>Password</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
